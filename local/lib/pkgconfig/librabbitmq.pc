@@ -1,0 +1,12 @@
+prefix=/app/www/local
+exec_prefix=/app/www/local/bin
+libdir=/app/www/local/lib
+includedir=/app/www/local/include
+
+Name: Librabbitmq
+Description: An AMQP 0-9-1 client library
+Version: 0.3.0
+Requires:
+Requires.private:
+Libs: -L${libdir} -lrabbitmq
+CFlags: -I${includedir}
